@@ -37,7 +37,18 @@ namespace EntidadFinanciera2M6
 
         private void btnAgregarCuenta_Click(object sender, EventArgs e)
         {
-            
+            if (dgvClientes.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccione un cliente primero");
+                return;
+            }
+            int clienteId = (int)dgvClientes.SelectedRows[0].Cells["ClienteId"].Value;
+            var form = new AgregarCuentasForm(clienteId);
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                _servicio.AgregarCuenta(form.NuevaCuenta);
+                CargarDatos();
+            }
         }
 
         private void btnDesctivarCuenta_Click(object sender, EventArgs e)
@@ -52,7 +63,7 @@ namespace EntidadFinanciera2M6
             CargarDatos();
         }
 
-        
+
 
         private void btnTransferencia_Click(object sender, EventArgs e)
         {
@@ -69,18 +80,26 @@ namespace EntidadFinanciera2M6
                 var form = new TransferenciaForms(cuentaOrigenId, cuentaDestinoId);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                 
+                    try
+                    {
+                        _servicio.TransferirFondos(cuentaOrigenId, cuentaDestinoId, form.Monto);
+                        MessageBox.Show("Transferencia realizada con éxito");
+                        CargarDatos();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error: " + ex.Message);
+                    }
                 }
 
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btnVerTransferencia_Click(object sender, EventArgs e)
         {
             var form = new Form2();
             form.ShowDialog();
         }
-
-      
     }
 }

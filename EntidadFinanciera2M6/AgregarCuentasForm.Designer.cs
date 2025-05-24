@@ -1,6 +1,6 @@
 ﻿namespace EntidadFinanciera2M6
 {
-    partial class AgregarCuetasForm
+    partial class AgregarCuentasForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarCuetasForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarCuentasForm));
             label1 = new Label();
             txtNumCuenta = new TextBox();
             numSaldoInicial = new NumericUpDown();
