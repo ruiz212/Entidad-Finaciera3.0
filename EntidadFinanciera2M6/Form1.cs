@@ -82,7 +82,7 @@ namespace EntidadFinanciera2M6
                 {
                     try
                     {
-                        _servicio.TransferirFondos(origenId, destinoId, form.Monto);
+                        _servicio.TransferirFondos(cuentaOrigenId, cuentaDestinoId, form.Monto);
                         MessageBox.Show("Transferencia realizada con éxito");
                         CargarDatos();
                     }
