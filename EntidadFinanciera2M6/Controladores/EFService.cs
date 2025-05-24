@@ -37,57 +37,6 @@ namespace EntidadFinanciera2M6.Controladores
                 }).ToList<object>();
         }
 
-        public void DesactivarCuenta(int cuentaId)
-        {
-            var cuenta = _context.Cuentas.Find(cuentaId);
-            if (cuenta != null)
-            {
-                cuenta.Activa = false;
-                _context.SaveChanges();
-            }
-        }
-
-        public void TransferirFondos(int origenId, int destinoId, decimal monto)
-        {
-            using var transaccion = _context.Database.BeginTransaction(System.Data.IsolationLevel.Serializable);
-            try
-            {
-                var cuentaOrigen = _context.Cuentas.FirstOrDefault(c => c.CuentaId == origenId);
-                var cuentaDestino = _context.Cuentas.FirstOrDefault(c => c.CuentaId == destinoId);
-
-                if (cuentaOrigen == null || cuentaDestino == null)
-                    throw new Exception("Cuentas no encontradas");
-
-                if (cuentaOrigen.Saldo < monto)
-                    throw new Exception("Saldo insuficiente");
-
-                cuentaOrigen.Saldo -= monto;
-                cuentaDestino.Saldo += monto;
-
-                _context.Transacciones.Add(new Transaccion
-                {
-                    Monto = monto,
-                    Fecha = DateTime.Now,
-                    Tipo = "Transferencia",
-                    Descripcion = "Transferencia entre cuentas",
-                    CuentaOrigenId = origenId,
-                    CuentaDestinoId = destinoId
-                });
-
-                _context.SaveChanges();
-                transaccion.Commit();
-            }
-            catch
-            {
-                transaccion.Rollback();
-                throw;
-            }
-        }
-
-        public List<Transaccion> ObtenerTransacciones()
-        {
-            return _context.Transacciones.ToList();
-        }
 
     }
 }
