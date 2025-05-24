@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace EntidadFinanciera2M6
 {
-    
+
     public partial class Form2 : Form
     {
-     private EntidadFinancieraContext ef = new EntidadFinancieraContext();
-            public Form2()
+        private EntidadFinancieraContext ef = new EntidadFinancieraContext();
+        public Form2()
         {
             InitializeComponent();
             Cargar();
@@ -24,6 +24,11 @@ namespace EntidadFinanciera2M6
         private void Cargar()
         {
             dataGridView1.DataSource = ef.Transacciones.ToList();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -11,7 +11,7 @@ namespace EntidadFinanciera2M6.Controladores
 {
     public class EFService
     {
-        private readonly EntidadFinancieraContext _context;
+        private readonly EntidadFinancieraContext _context = new EntidadFinancieraContext();
 
         public EFService()
         {
