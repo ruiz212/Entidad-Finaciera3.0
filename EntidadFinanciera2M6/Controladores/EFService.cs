@@ -23,5 +23,20 @@ namespace EntidadFinanciera2M6.Controladores
             return _context.Clientes.Include(c => c.Cuentas).ToList();
         }
 
+        public List<object> ObtenerCuentasConCliente()
+        {
+            return _context.Cuentas.Include(c => c.Cliente)
+                .Select(c => new
+                {
+                    c.CuentaId,
+                    c.NumeroCuenta,
+                    c.Saldo,
+                    c.Activa,
+                    c.ClienteId,
+                    c.Cliente.Nombre
+                }).ToList<object>();
+        }
+
+
     }
 }
