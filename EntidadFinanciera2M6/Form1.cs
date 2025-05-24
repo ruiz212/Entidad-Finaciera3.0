@@ -1,12 +1,13 @@
 using EntidadFinanciera2M6.Data;
 using Microsoft.EntityFrameworkCore;
 using EntidadFinanciera2M6.Models;
+using EntidadFinanciera2M6.Controladores;
 
 namespace EntidadFinanciera2M6
 {
     public partial class Form1 : Form
     {
-        private EntidadFinancieraContext _db = new EntidadFinancieraContext();
+        private EFService _servicio = new EFService();
         public Form1()
         {
             InitializeComponent();
@@ -18,49 +19,25 @@ namespace EntidadFinanciera2M6
             //Ejecucion de consultas
             //Uso de linq-filtrado de informacion
 
-            var clientes = _db.Clientes.Include(c => c.Cuentas).ToList();
-            var cuentas = _db.Cuentas.Include(c => c.Cliente).Where(c => c.Activa).
-                Select(c => new
-                {
-                    c.CuentaId,
-                    c.NumeroCuenta,
-                    c.Saldo,
-                    c.Activa,
-                    c.ClienteId,
-                    c.Cliente.Nombre
-                }).ToList();
-
-            // dgvClientes.DataSource = _db.Clientes.ToList();
-            dgvClientes.DataSource = clientes;
-            dgvCuentas.DataSource = cuentas;
+            var clientes = _servicio.ObtenerClientesConCuentas();
+            var cuentas = _servicio.ObtenerCuentasConCliente();
         }
+
+
 
         private void btnAgregarCliente_Click(object sender, EventArgs e)
         {
             var form = new AgregarClienteForm();
             if (form.ShowDialog() == DialogResult.OK)
             {
-                _db.Clientes.Add(form.NuevoCliente);
-                _db.SaveChanges();
+                _servicio.AgregarCliente(form.NuevoCliente);
                 CargarDatos();
             }
         }
 
         private void btnAgregarCuenta_Click(object sender, EventArgs e)
         {
-            if (dgvClientes.SelectedRows.Count == 0)
-            {
-                MessageBox.Show("Seleccione un cliente primero");
-                return;
-            }
-            var clienteId = (int)dgvClientes.SelectedRows[0].Cells["ClienteId"].Value;
-            var form = new AgregarCuetasForm(clienteId);
-            if (form.ShowDialog() == DialogResult.OK)
-            {
-                _db.Cuentas.Add(form.NuevaCuenta);
-                _db.SaveChanges();
-                CargarDatos();
-            }
+        
         }
 
         private void btnDesctivarCuenta_Click(object sender, EventArgs e)
@@ -71,53 +48,11 @@ namespace EntidadFinanciera2M6
                 return;
             }
             var cuentaId = (int)dgvCuentas.SelectedRows[0].Cells["CuentaId"].Value;
-            var cuenta = _db.Cuentas.Find(cuentaId);
-            if (cuenta != null)
-                cuenta.Activa = false;
-            _db.SaveChanges();
+            _servicio.DesactivarCuenta(cuentaId);
             CargarDatos();
         }
 
-        private void RealizarTransacc(int origenCuenta, int destinoCuenta, decimal monto)
-        {
-            //Transacciones completas
-            //implentacion de transacciones
-            //Nivel de asilaiento (serializable para operaciones financieras)
-            using var transaccion = _db.Database.BeginTransaction(System.Data.IsolationLevel.Serializable);
-            try
-            {
-                var cuentaOrigen = _db.Cuentas.FirstOrDefault(c => c.CuentaId == origenCuenta);
-                var cuentaDestino = _db.Cuentas.FirstOrDefault(c => c.CuentaId == destinoCuenta);
-
-                if (cuentaOrigen.Saldo < monto)
-                {
-                    throw new Exception("Saldo insuficiente");
-                }
-                cuentaOrigen.Saldo -= monto;
-                cuentaDestino.Saldo += monto;
-                _db.Transacciones.Add(new Transaccion
-                {
-                    Monto = monto,
-                    Fecha = DateTime.Now,
-                    Tipo = "Transferencia",
-                    Descripcion = "Transferencia",
-                    CuentaOrigenId = origenCuenta,
-                    CuentaDestinoId = destinoCuenta
-                });
-                _db.SaveChanges();
-                //Completamos la transaccion
-                transaccion.Commit();
-                MessageBox.Show("Trasnferencia realizada con exito");
-                CargarDatos();
-
-            }
-            catch (Exception ex)
-            {
-                //reversion de transacciones
-                transaccion.Rollback();
-                MessageBox.Show($"Error en la transferencia: {ex.Message}");
-            }
-        }
+        
 
         private void btnTransferencia_Click(object sender, EventArgs e)
         {
@@ -134,7 +69,7 @@ namespace EntidadFinanciera2M6
                 var form = new TransferenciaForms(cuentaOrigenId, cuentaDestinoId);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    RealizarTransacc(cuentaOrigenId, cuentaDestinoId, form.Monto);
+                
                 }
 
             }
