@@ -16,11 +16,10 @@ namespace EntidadFinanciera2M6
 
         private void CargarDatos()
         {
-            //Ejecucion de consultas
-            //Uso de linq-filtrado de informacion
-
             var clientes = _servicio.ObtenerClientesConCuentas();
             var cuentas = _servicio.ObtenerCuentasConCliente();
+            dgvClientes.DataSource = clientes;
+            dgvCuentas.DataSource = cuentas;
         }
 
 
@@ -39,7 +38,7 @@ namespace EntidadFinanciera2M6
         {
             if (dgvClientes.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Seleccione un cliente primero");
+                MessageBox.Show("Seleccione un cliente primero","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
             int clienteId = (int)dgvClientes.SelectedRows[0].Cells["ClienteId"].Value;
@@ -55,7 +54,7 @@ namespace EntidadFinanciera2M6
         {
             if (dgvCuentas.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Seleccione una cuenta para desactivar");
+                MessageBox.Show("Seleccione una cuenta para desactivar","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
             var cuentaId = (int)dgvCuentas.SelectedRows[0].Cells["CuentaId"].Value;
@@ -69,7 +68,7 @@ namespace EntidadFinanciera2M6
         {
             if (dgvCuentas.SelectedRows.Count != 2)
             {
-                MessageBox.Show("Seleccione exactamente 2 cuentas");
+                MessageBox.Show("Seleccione exactamente 2 cuentas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else
@@ -83,12 +82,12 @@ namespace EntidadFinanciera2M6
                     try
                     {
                         _servicio.TransferirFondos(cuentaOrigenId, cuentaDestinoId, form.Monto);
-                        MessageBox.Show("Transferencia realizada con éxito");
+                        MessageBox.Show("Transferencia realizada con éxito","Exito",MessageBoxButtons.OK,MessageBoxIcon.Information);
                         CargarDatos();
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Error: " + ex.Message);
+                        MessageBox.Show("Error: " + ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     }
                 }
 

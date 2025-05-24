@@ -62,6 +62,7 @@
             // 
             numSaldoInicial.ForeColor = Color.FromArgb(0, 64, 0);
             numSaldoInicial.Location = new Point(294, 158);
+            numSaldoInicial.Maximum = new decimal(new int[] { -1530494976, 232830, 0, 0 });
             numSaldoInicial.Name = "numSaldoInicial";
             numSaldoInicial.Size = new Size(149, 27);
             numSaldoInicial.TabIndex = 2;
@@ -108,7 +109,7 @@
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
-            // AgregarCuetasForm
+            // AgregarCuentasForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -120,7 +121,7 @@
             Controls.Add(numSaldoInicial);
             Controls.Add(txtNumCuenta);
             Controls.Add(label1);
-            Name = "AgregarCuetasForm";
+            Name = "AgregarCuentasForm";
             Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)numSaldoInicial).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -28,7 +28,7 @@ namespace EntidadFinanciera2M6
         {
             if (string.IsNullOrEmpty(txtNumCuenta.Text))
             {
-                MessageBox.Show("El numero de cuenta es requerido");
+                MessageBox.Show("El numero de cuenta es requerido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else

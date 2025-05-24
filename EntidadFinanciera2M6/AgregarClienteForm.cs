@@ -23,7 +23,7 @@ namespace EntidadFinanciera2M6
         {
             if (string.IsNullOrWhiteSpace(txtNombre.Text) || string.IsNullOrWhiteSpace(txtIdentificacion.Text))
             {
-                MessageBox.Show("Todos los campos son requeridos");
+                MessageBox.Show("Todos los campos son requeridos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             NuevoCliente = new Cliente

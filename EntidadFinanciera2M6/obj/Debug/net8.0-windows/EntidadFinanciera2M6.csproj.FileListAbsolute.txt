@@ -275,7 +275,6 @@ C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\bin\Debug\
 C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\net8.0-windows\EntidadFinanciera2M6.csproj.AssemblyReference.cache
 C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\net8.0-windows\EntidadFinanciera2M6.AgregarClienteForm.resources
-C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\net8.0-windows\EntidadFinanciera2M6.AgregarCuetasForm.resources
 C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\net8.0-windows\EntidadFinanciera2M6.Form1.resources
 C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\net8.0-windows\EntidadFinanciera2M6.Form2.resources
 C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\net8.0-windows\EntidadFinanciera2M6.Properties.Resources.resources
@@ -292,3 +291,4 @@ C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\
 C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\net8.0-windows\EntidadFinanciera2M6.pdb
 C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\net8.0-windows\EntidadFinanciera2M6.genruntimeconfig.cache
 C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\net8.0-windows\ref\EntidadFinanciera2M6.dll
+C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\obj\Debug\net8.0-windows\EntidadFinanciera2M6.AgregarCuentasForm.resources
