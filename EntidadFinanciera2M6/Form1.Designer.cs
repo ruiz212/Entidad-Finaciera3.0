@@ -35,7 +35,7 @@
             btnAgregarCuenta = new Button();
             btnDesctivarCuenta = new Button();
             btnTransferencia = new Button();
-            button1 = new Button();
+            btnVerTransferecia = new Button();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
@@ -50,9 +50,10 @@
             // 
             btnAgregarCliente.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnAgregarCliente.ForeColor = Color.FromArgb(0, 64, 0);
-            btnAgregarCliente.Location = new Point(303, 57);
+            btnAgregarCliente.Location = new Point(265, 43);
+            btnAgregarCliente.Margin = new Padding(3, 2, 3, 2);
             btnAgregarCliente.Name = "btnAgregarCliente";
-            btnAgregarCliente.Size = new Size(156, 39);
+            btnAgregarCliente.Size = new Size(136, 29);
             btnAgregarCliente.TabIndex = 0;
             btnAgregarCliente.Text = "AgregarCliente";
             btnAgregarCliente.UseVisualStyleBackColor = true;
@@ -64,10 +65,11 @@
             dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvClientes.Dock = DockStyle.Bottom;
             dgvClientes.GridColor = Color.FromArgb(0, 64, 0);
-            dgvClientes.Location = new Point(0, 149);
+            dgvClientes.Location = new Point(0, 112);
+            dgvClientes.Margin = new Padding(3, 2, 3, 2);
             dgvClientes.Name = "dgvClientes";
             dgvClientes.RowHeadersWidth = 51;
-            dgvClientes.Size = new Size(665, 301);
+            dgvClientes.Size = new Size(582, 226);
             dgvClientes.TabIndex = 1;
             // 
             // dgvCuentas
@@ -77,19 +79,21 @@
             dgvCuentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCuentas.Dock = DockStyle.Bottom;
             dgvCuentas.GridColor = Color.FromArgb(0, 64, 0);
-            dgvCuentas.Location = new Point(0, 149);
+            dgvCuentas.Location = new Point(0, 112);
+            dgvCuentas.Margin = new Padding(3, 2, 3, 2);
             dgvCuentas.Name = "dgvCuentas";
             dgvCuentas.RowHeadersWidth = 51;
-            dgvCuentas.Size = new Size(682, 301);
+            dgvCuentas.Size = new Size(597, 226);
             dgvCuentas.TabIndex = 2;
             // 
             // btnAgregarCuenta
             // 
             btnAgregarCuenta.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnAgregarCuenta.ForeColor = Color.FromArgb(0, 64, 0);
-            btnAgregarCuenta.Location = new Point(512, 57);
+            btnAgregarCuenta.Location = new Point(448, 43);
+            btnAgregarCuenta.Margin = new Padding(3, 2, 3, 2);
             btnAgregarCuenta.Name = "btnAgregarCuenta";
-            btnAgregarCuenta.Size = new Size(125, 39);
+            btnAgregarCuenta.Size = new Size(109, 29);
             btnAgregarCuenta.TabIndex = 3;
             btnAgregarCuenta.Text = "Agregar Cuenta";
             btnAgregarCuenta.UseVisualStyleBackColor = true;
@@ -99,9 +103,10 @@
             // 
             btnDesctivarCuenta.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnDesctivarCuenta.ForeColor = Color.FromArgb(0, 64, 0);
-            btnDesctivarCuenta.Location = new Point(69, 57);
+            btnDesctivarCuenta.Location = new Point(60, 43);
+            btnDesctivarCuenta.Margin = new Padding(3, 2, 3, 2);
             btnDesctivarCuenta.Name = "btnDesctivarCuenta";
-            btnDesctivarCuenta.Size = new Size(144, 39);
+            btnDesctivarCuenta.Size = new Size(126, 29);
             btnDesctivarCuenta.TabIndex = 4;
             btnDesctivarCuenta.Text = "Desactivar Cuenta";
             btnDesctivarCuenta.UseVisualStyleBackColor = true;
@@ -111,25 +116,27 @@
             // 
             btnTransferencia.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnTransferencia.ForeColor = Color.FromArgb(0, 64, 0);
-            btnTransferencia.Location = new Point(276, 57);
+            btnTransferencia.Location = new Point(242, 43);
+            btnTransferencia.Margin = new Padding(3, 2, 3, 2);
             btnTransferencia.Name = "btnTransferencia";
-            btnTransferencia.Size = new Size(121, 39);
+            btnTransferencia.Size = new Size(106, 29);
             btnTransferencia.TabIndex = 5;
             btnTransferencia.Text = "Transferir";
             btnTransferencia.UseVisualStyleBackColor = true;
             btnTransferencia.Click += btnTransferencia_Click;
             // 
-            // button1
+            // btnVerTransferecia
             // 
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            button1.ForeColor = Color.FromArgb(0, 64, 0);
-            button1.Location = new Point(456, 57);
-            button1.Name = "button1";
-            button1.Size = new Size(158, 39);
-            button1.TabIndex = 6;
-            button1.Text = "Ver Trasnferencias";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnVerTransferecia.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnVerTransferecia.ForeColor = Color.FromArgb(0, 64, 0);
+            btnVerTransferecia.Location = new Point(399, 43);
+            btnVerTransferecia.Margin = new Padding(3, 2, 3, 2);
+            btnVerTransferecia.Name = "btnVerTransferecia";
+            btnVerTransferecia.Size = new Size(138, 29);
+            btnVerTransferecia.TabIndex = 6;
+            btnVerTransferecia.Text = "Ver Transferencias";
+            btnVerTransferecia.UseVisualStyleBackColor = true;
+            btnVerTransferecia.Click += btnVerTransferecia_Click;
             // 
             // panel1
             // 
@@ -141,17 +148,18 @@
             panel1.Dock = DockStyle.Left;
             panel1.ForeColor = Color.FromArgb(0, 64, 0);
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(665, 450);
+            panel1.Size = new Size(582, 338);
             panel1.TabIndex = 7;
-          
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(10, 9);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(241, 84);
+            pictureBox1.Size = new Size(211, 63);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -159,25 +167,27 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.ButtonHighlight;
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(btnVerTransferecia);
             panel2.Controls.Add(btnTransferencia);
             panel2.Controls.Add(dgvCuentas);
             panel2.Controls.Add(btnDesctivarCuenta);
             panel2.Dock = DockStyle.Right;
-            panel2.Location = new Point(667, 0);
+            panel2.Location = new Point(583, 0);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(682, 450);
+            panel2.Size = new Size(597, 338);
             panel2.TabIndex = 8;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1349, 450);
+            ClientSize = new Size(1180, 338);
             Controls.Add(panel1);
             Controls.Add(panel2);
             ForeColor = SystemColors.ActiveCaptionText;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
@@ -196,7 +206,7 @@
         private Button btnAgregarCuenta;
         private Button btnDesctivarCuenta;
         private Button btnTransferencia;
-        private Button button1;
+        private Button btnVerTransferecia;
         private Panel panel1;
         private Panel panel2;
         private PictureBox pictureBox1;
