@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>EntidadFinanciera2M6</id>
+    <version>1.0.0</version>
+    <authors>EntidadFinanciera2M6</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="2af37013fa4f754bdd881ca445261f792652beb1" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0">
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="9.0.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\bin\Debug\net8.0-windows\EntidadFinanciera2M6.runtimeconfig.json" target="lib\net8.0-windows7.0\EntidadFinanciera2M6.runtimeconfig.json" />
+    <file src="C:\Users\miure\source\repos\Entidad-Finaciera3.0\EntidadFinanciera2M6\bin\Debug\net8.0-windows\EntidadFinanciera2M6.dll" target="lib\net8.0-windows7.0\EntidadFinanciera2M6.dll" />
+  </files>
+</package>

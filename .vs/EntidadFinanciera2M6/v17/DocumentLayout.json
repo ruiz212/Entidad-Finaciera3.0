@@ -11,20 +11,20 @@
       "RelativeMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|solutionrelative:entidadfinanciera2m6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|c:\\users\\miure\\source\\repos\\entidad-finaciera3.0\\entidadfinanciera2m6\\controladores\\efservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|solutionrelative:entidadfinanciera2m6\\controladores\\efservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\entidadfinanciera2m6\\agregarcuetasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|solutionrelative:entidadfinanciera2m6\\agregarcuetasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|c:\\users\\miure\\source\\repos\\entidad-finaciera3.0\\entidadfinanciera2m6\\agregarcuetasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|solutionrelative:entidadfinanciera2m6\\agregarcuetasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\entidadfinanciera2m6\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|solutionrelative:entidadfinanciera2m6\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|c:\\users\\miure\\source\\repos\\entidad-finaciera3.0\\entidadfinanciera2m6\\agregarcuetasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|solutionrelative:entidadfinanciera2m6\\agregarcuetasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|c:\\users\\miure\\source\\repos\\entidad-finaciera3.0\\entidadfinanciera2m6\\controladores\\efservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|solutionrelative:entidadfinanciera2m6\\controladores\\efservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\entidadfinanciera2m6\\agregarcuetasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|solutionrelative:entidadfinanciera2m6\\agregarcuetasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E510833-2F85-4125-947B-50CF7A180399}|EntidadFinanciera2M6\\EntidadFinanciera2M6.csproj|c:\\users\\miure\\source\\repos\\entidad-finaciera3.0\\entidadfinanciera2m6\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 20,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -101,37 +101,12 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EFService.cs",
-              "DocumentMoniker": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\Controladores\\EFService.cs",
-              "RelativeDocumentMoniker": "EntidadFinanciera2M6\\Controladores\\EFService.cs",
-              "ToolTip": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\Controladores\\EFService.cs",
-              "RelativeToolTip": "EntidadFinanciera2M6\\Controladores\\EFService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T06:01:35.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AgregarCuetasForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\AgregarCuetasForm.cs",
-              "RelativeDocumentMoniker": "EntidadFinanciera2M6\\AgregarCuetasForm.cs",
-              "ToolTip": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\AgregarCuetasForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "EntidadFinanciera2M6\\AgregarCuetasForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T13:39:34.827Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Form2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\Form2.cs",
               "RelativeDocumentMoniker": "EntidadFinanciera2M6\\Form2.cs",
@@ -143,13 +118,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "AgregarCuetasForm.cs",
               "DocumentMoniker": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\AgregarCuetasForm.cs",
               "RelativeDocumentMoniker": "EntidadFinanciera2M6\\AgregarCuetasForm.cs",
               "ToolTip": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\AgregarCuetasForm.cs",
               "RelativeToolTip": "EntidadFinanciera2M6\\AgregarCuetasForm.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAASwBEAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T13:44:23.254Z",
               "EditorCaption": ""
@@ -200,9 +175,34 @@
               "RelativeDocumentMoniker": "EntidadFinanciera2M6\\Form1.cs",
               "ToolTip": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\Form1.cs",
               "RelativeToolTip": "EntidadFinanciera2M6\\Form1.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA1wJQAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T16:16:04.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AgregarCuetasForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\AgregarCuetasForm.cs",
+              "RelativeDocumentMoniker": "EntidadFinanciera2M6\\AgregarCuetasForm.cs",
+              "ToolTip": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\AgregarCuetasForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "EntidadFinanciera2M6\\AgregarCuetasForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T13:39:34.827Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EFService.cs",
+              "DocumentMoniker": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\Controladores\\EFService.cs",
+              "RelativeDocumentMoniker": "EntidadFinanciera2M6\\Controladores\\EFService.cs",
+              "ToolTip": "C:\\Users\\miure\\source\\repos\\Entidad-Finaciera3.0\\EntidadFinanciera2M6\\Controladores\\EFService.cs",
+              "RelativeToolTip": "EntidadFinanciera2M6\\Controladores\\EFService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T06:01:35.734Z",
               "EditorCaption": ""
             },
             {

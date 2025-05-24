@@ -32,6 +32,7 @@ namespace EntidadFinanciera2M6
                 Identificacion = txtIdentificacion.Text
             };
             DialogResult = DialogResult.OK;
+
             Close();
 
 

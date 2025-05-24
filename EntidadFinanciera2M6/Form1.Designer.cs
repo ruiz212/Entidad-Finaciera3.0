@@ -87,9 +87,9 @@
             // 
             btnAgregarCuenta.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btnAgregarCuenta.ForeColor = Color.FromArgb(0, 64, 0);
-            btnAgregarCuenta.Location = new Point(512, 57);
+            btnAgregarCuenta.Location = new Point(477, 57);
             btnAgregarCuenta.Name = "btnAgregarCuenta";
-            btnAgregarCuenta.Size = new Size(125, 39);
+            btnAgregarCuenta.Size = new Size(160, 39);
             btnAgregarCuenta.TabIndex = 3;
             btnAgregarCuenta.Text = "Agregar Cuenta";
             btnAgregarCuenta.UseVisualStyleBackColor = true;
@@ -144,7 +144,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(665, 450);
             panel1.TabIndex = 7;
-          
             // 
             // pictureBox1
             // 
