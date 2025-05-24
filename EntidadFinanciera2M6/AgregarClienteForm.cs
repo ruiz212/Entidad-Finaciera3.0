@@ -43,9 +43,6 @@ namespace EntidadFinanciera2M6
             Close();
         }
 
-        private void AgregarClienteForm_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

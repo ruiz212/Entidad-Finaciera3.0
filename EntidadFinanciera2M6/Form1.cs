@@ -146,9 +146,6 @@ namespace EntidadFinanciera2M6
             form.ShowDialog();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+      
     }
 }
