@@ -37,7 +37,7 @@ namespace EntidadFinanciera2M6
 
         private void btnAgregarCuenta_Click(object sender, EventArgs e)
         {
-        
+
         }
 
         private void btnDesctivarCuenta_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace EntidadFinanciera2M6
             CargarDatos();
         }
 
-        
+
 
         private void btnTransferencia_Click(object sender, EventArgs e)
         {
@@ -69,13 +69,14 @@ namespace EntidadFinanciera2M6
                 var form = new TransferenciaForms(cuentaOrigenId, cuentaDestinoId);
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                
+
                 }
 
             }
         }
 
-        private void btnVerTransferecia_Click(object sender, EventArgs e)
+
+        private void btnVerTransferencia_Click(object sender, EventArgs e)
         {
             var form = new Form2();
             form.ShowDialog();
