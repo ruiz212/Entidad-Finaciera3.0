@@ -140,12 +140,6 @@ namespace EntidadFinanciera2M6
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var form = new Form2();
-            form.ShowDialog();
-        }
-
         private void btnVerTransferecia_Click(object sender, EventArgs e)
         {
             var form = new Form2();
