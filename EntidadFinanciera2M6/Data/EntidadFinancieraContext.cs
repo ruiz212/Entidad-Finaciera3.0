@@ -16,7 +16,7 @@ namespace EntidadFinanciera2M6.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server = DESKTOP-B1JNRCE\SQLSERVER2019; database = EntidadFinanciera2M6; trusted_connection = true; trustserverCertificate = true;");
+            optionsBuilder.UseSqlServer(@"Server = localhost\SQLDEV; database = EntidadFinancieraMejorada; trusted_connection = true; trustserverCertificate = true;");
         }
         // Filtros globales
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransferenciaForms));
             lblCuentaOrigen = new Label();
             btnAceptar = new Button();
             numMonto = new NumericUpDown();
@@ -35,13 +36,16 @@
             lblCuentaDestino = new Label();
             btnCancelar = new Button();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)numMonto).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblCuentaOrigen
             // 
             lblCuentaOrigen.AutoSize = true;
-            lblCuentaOrigen.Location = new Point(13, 26);
+            lblCuentaOrigen.ForeColor = Color.FromArgb(0, 64, 0);
+            lblCuentaOrigen.Location = new Point(35, 118);
             lblCuentaOrigen.Name = "lblCuentaOrigen";
             lblCuentaOrigen.Size = new Size(50, 20);
             lblCuentaOrigen.TabIndex = 0;
@@ -49,7 +53,8 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(22, 189);
+            btnAceptar.ForeColor = Color.FromArgb(0, 64, 0);
+            btnAceptar.Location = new Point(118, 272);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(104, 38);
             btnAceptar.TabIndex = 1;
@@ -59,7 +64,9 @@
             // 
             // numMonto
             // 
-            numMonto.Location = new Point(242, 69);
+            numMonto.BackColor = Color.White;
+            numMonto.ForeColor = Color.FromArgb(0, 64, 0);
+            numMonto.Location = new Point(264, 152);
             numMonto.Maximum = new decimal(new int[] { 10000000, 0, 0, 0 });
             numMonto.Name = "numMonto";
             numMonto.Size = new Size(105, 27);
@@ -68,7 +75,8 @@
             // lblSaldo
             // 
             lblSaldo.AutoSize = true;
-            lblSaldo.Location = new Point(13, 71);
+            lblSaldo.ForeColor = Color.FromArgb(0, 64, 0);
+            lblSaldo.Location = new Point(35, 154);
             lblSaldo.Name = "lblSaldo";
             lblSaldo.Size = new Size(50, 20);
             lblSaldo.TabIndex = 3;
@@ -77,7 +85,8 @@
             // lblCuentaDestino
             // 
             lblCuentaDestino.AutoSize = true;
-            lblCuentaDestino.Location = new Point(13, 119);
+            lblCuentaDestino.ForeColor = Color.FromArgb(0, 64, 0);
+            lblCuentaDestino.Location = new Point(35, 202);
             lblCuentaDestino.Name = "lblCuentaDestino";
             lblCuentaDestino.Size = new Size(50, 20);
             lblCuentaDestino.TabIndex = 4;
@@ -85,7 +94,8 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(367, 189);
+            btnCancelar.ForeColor = Color.FromArgb(0, 64, 0);
+            btnCancelar.Location = new Point(389, 272);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(86, 38);
             btnCancelar.TabIndex = 5;
@@ -95,17 +105,30 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(367, 76);
+            label1.ForeColor = Color.FromArgb(0, 64, 0);
+            label1.Location = new Point(389, 159);
             label1.Name = "label1";
             label1.Size = new Size(130, 20);
             label1.TabIndex = 6;
             label1.Text = "Monto a Transferir";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(31, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(191, 72);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
             // TransferenciaForms
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(518, 258);
+            BackColor = Color.White;
+            ClientSize = new Size(595, 337);
+            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(btnCancelar);
             Controls.Add(lblCuentaDestino);
@@ -116,6 +139,7 @@
             Name = "TransferenciaForms";
             Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)numMonto).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -129,5 +153,6 @@
         private Label lblCuentaDestino;
         private Button btnCancelar;
         private Label label1;
+        private PictureBox pictureBox1;
     }
 }

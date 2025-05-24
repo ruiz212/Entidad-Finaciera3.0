@@ -42,5 +42,10 @@ namespace EntidadFinanciera2M6
             DialogResult = DialogResult.Cancel;
             Close();
         }
+
+        private void AgregarClienteForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
