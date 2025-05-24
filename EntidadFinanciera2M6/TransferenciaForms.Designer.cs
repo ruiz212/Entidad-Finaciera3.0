@@ -34,9 +34,9 @@
             numMonto = new NumericUpDown();
             lblSaldo = new Label();
             lblCuentaDestino = new Label();
-            btnCancelar = new Button();
             label1 = new Label();
             pictureBox1 = new PictureBox();
+            btnCancelar = new Button();
             ((System.ComponentModel.ISupportInitialize)numMonto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -92,16 +92,6 @@
             lblCuentaDestino.TabIndex = 4;
             lblCuentaDestino.Text = "label3";
             // 
-            // btnCancelar
-            // 
-            btnCancelar.ForeColor = Color.FromArgb(0, 64, 0);
-            btnCancelar.Location = new Point(389, 272);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(86, 38);
-            btnCancelar.TabIndex = 5;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -121,6 +111,17 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.ForeColor = Color.FromArgb(0, 64, 0);
+            btnCancelar.Location = new Point(389, 272);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(86, 38);
+            btnCancelar.TabIndex = 5;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // TransferenciaForms
             // 
@@ -151,8 +152,8 @@
         private NumericUpDown numMonto;
         private Label lblSaldo;
         private Label lblCuentaDestino;
-        private Button btnCancelar;
         private Label label1;
         private PictureBox pictureBox1;
+        private Button btnCancelar;
     }
 }

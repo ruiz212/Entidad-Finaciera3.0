@@ -50,7 +50,13 @@ namespace EntidadFinanciera2M6
                 Close();
             }
             else
-            MessageBox.Show("El monto tiene que ser mayor a 0");
+                MessageBox.Show("El monto tiene que ser mayor a 0");
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+            Close();
         }
     }
 }
