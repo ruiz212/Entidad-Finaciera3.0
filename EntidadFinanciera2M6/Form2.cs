@@ -26,9 +26,9 @@ namespace EntidadFinanciera2M6
             dataGridView1.DataSource = ef.Transacciones.ToList();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
