@@ -37,7 +37,18 @@ namespace EntidadFinanciera2M6
 
         private void btnAgregarCuenta_Click(object sender, EventArgs e)
         {
-
+            if (dgvClientes.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccione un cliente primero");
+                return;
+            }
+            int clienteId = (int)dgvClientes.SelectedRows[0].Cells["ClienteId"].Value;
+            var form = new AgregarCuentasForm(clienteId);
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                _servicio.AgregarCuenta(form.NuevaCuenta);
+                CargarDatos();
+            }
         }
 
         private void btnDesctivarCuenta_Click(object sender, EventArgs e)
