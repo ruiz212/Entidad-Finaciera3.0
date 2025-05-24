@@ -36,7 +36,17 @@ namespace EntidadFinanciera2M6.Controladores
                     c.Cliente.Nombre
                 }).ToList<object>();
         }
+        public void AgregarCliente(Cliente cliente)
+        {
+            _context.Clientes.Add(cliente);
+            _context.SaveChanges();
+        }
 
+        public void AgregarCuenta(Cuenta cuenta)
+        {
+            _context.Cuentas.Add(cuenta);
+            _context.SaveChanges();
+        }
         public void DesactivarCuenta(int cuentaId)
         {
             var cuenta = _context.Cuentas.Find(cuentaId);
