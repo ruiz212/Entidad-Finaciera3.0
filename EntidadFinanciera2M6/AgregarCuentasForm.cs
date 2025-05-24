@@ -11,14 +11,17 @@ using System.Windows.Forms;
 
 namespace EntidadFinanciera2M6
 {
-    public partial class AgregarCuetasForm : Form
+    //Arreglo de errores ortograficos
+
+    //Cambio de nombre de AgregarCuetasForm a AgregarCuentasForm
+    public partial class AgregarCuentasForm : Form
     {
         public Cuenta NuevaCuenta { get; private set; }
-        private int _cienteId;
-        public AgregarCuetasForm(int clienteId)
+        private int _clienteId;  //Cambio de la variable de cienteId a clienteId
+        public AgregarCuentasForm(int clienteId)
         {
             InitializeComponent();
-            _cienteId = clienteId;
+            _clienteId = clienteId; //Cambio de la variable de cienteId a clienteId
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
@@ -34,7 +37,7 @@ namespace EntidadFinanciera2M6
                 {
                     NumeroCuenta = txtNumCuenta.Text,
                     Saldo = numSaldoInicial.Value,
-                    ClienteId = _cienteId,
+                    ClienteId = _clienteId,
                     Activa = true
                 };
             }
